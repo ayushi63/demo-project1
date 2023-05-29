@@ -1,0 +1,177 @@
+.App {
+  /* text-align: center; */
+  gap: 1rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.btn{
+  width: 9rem;
+  height: 2rem;
+  background-color: lightcoral;
+  margin-top: 50px;
+  border: none;
+  font-size: 18px;
+}
+.btn:hover{
+  transition: 0.5s;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.alert{
+  background-color: #d1e7dd;
+  width: 80%;
+  position: relative;
+  top: 30px;
+  margin: auto;
+  color: black;
+  padding: 20px;
+}
+
+.alert p{
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.profile-card{
+  width: 40%;
+  position: relative;
+  top: 30px;
+  margin: auto;
+  border: 2px dotted black;
+}
+
+.btn button {
+  width: 9rem;
+  height: 2rem;
+}
+
+.profile-card h1{
+  font-family: sans-serif;
+}
+
+/* h1{
+  font-size: 20rem;
+} */
+
+.profile-card h3{
+  margin-bottom: 30px;
+}
+
+.profile-card p{
+  text-align: justify;
+  font-size: 17px;
+  font-family: sans-serif;
+  position: relative;
+  right: 20px;
+  margin-bottom: px;
+}
+
+.profile-card button{
+ margin-bottom: 20px;
+}
+
+
+
+.list-container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  /* margin-left: 14%; */
+  gap: 20px;
+}
+
+.text{
+  border: 1px solid black;
+  background-color: #61dafb;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  width: 60px;
+  height: 40px;
+}
+
+table{
+  border: 1px solid black;
+  margin: auto;
+}
+
+th{
+  max-width: 8rem;
+  border: 2px solid black;
+}
+
+thead{
+  background-color: lightgreen;
+}
+
+tbody{
+  background-color: lightpink ;
+}
+
+td{
+  max-width: 8rem;
+  min-width: 8rem;
+  overflow: auto;
+  white-space: normal;
+  border: 1px solid black;
+}
+
+.assignment{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width:992px) {
+  .assignment{
+  grid-template-columns: repeat(2,1fr) ;
+
+  }
+}
+@media screen and (max-width:576px) {
+  .assignment{
+  grid-template-columns: 1fr  ;
+
+  }
+}

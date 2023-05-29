@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+}
+
+li{
+    padding: 10px;
+    background-color: rgb(83, 83, 165);
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+i{
+    margin: 0 5px;
+}
+
+a, div{
+    text-decoration: none;
+    color: black;
+}
